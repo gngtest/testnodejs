@@ -1,7 +1,7 @@
 #FROM nginx:stable-alpine
 FROM centos/nginx-112-centos7
 
-LABEL version="1.0"
+#LABEL version="1.0"
 #RUN cp  /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 #RUN echo  "Europe/Istanbul" /etc/timezone
 #add timezone
