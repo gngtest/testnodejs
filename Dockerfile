@@ -7,9 +7,9 @@ LABEL version="1.0"
 #COPY nginx.conf /etc/nginx/nginx.conf
 #WORKDIR /usr/share/nginx/html
 
-RUN useradd -u 1001 -r -g 0 -d ${HOME} -s /sbin/nologin -c "Default Application User" default \
-    && mkdir -p ${HOME} \
-    && chown -R 1001:0 ${HOME} && chmod -R g+rwX ${HOME}
+#RUN useradd -u 1001 -r -g 0 -d ${HOME} -s /sbin/nologin -c "Default Application User" default \
+#    && mkdir -p ${HOME} \
+#    && chown -R 1001:0 ${HOME} && chmod -R g+rwX ${HOME}
 
 WORKDIR ./
 COPY . ./
