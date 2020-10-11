@@ -18,7 +18,7 @@ RUN yum install -y nodejs
 
 
 RUN npm install stream -save
-RUN chown -R nginx: /opt/app-root/src 
+#RUN chown -R nginx: /opt/app-root/src 
 #RUN npm ng serve
 
 EXPOSE 8080
